@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/page-cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <title>Boshop</title>
+  </head>
+  <body>
+    <div class="cart">
+      <div class="cart__container">
+        <div class="cartLeft">
+          <div class="cartLeft-top">
+            <h1 class="heading">Thông tin vận chuyển</h1>
+            <div class="cartLeft-top__login">
+              <span>Bạn đã có tài khoản?</span>
+              <a href="#!">Đăng nhập ngay</a>
+            </div>
+          </div>
+
+          <form class="cartLeft-form">
+            <div class="cartLeft-row">
+              <div class="cartLeft-col cartLeft-col--58">
+                <input placeholder="Họ và tên" type="text" />
+                <span style="display: none"></span>
+              </div>
+              <div class="cartLeft-col cartLeft-col--42">
+                <input placeholder="Số điện thoại" type="number" />
+                <span style="display: none"></span>
+              </div>
+            </div>
+
+            <div class="cartLeft-row">
+              <div class="cartLeft-col">
+                <input placeholder="Email" type="email" />
+                <span style="display: none"></span>
+              </div>
+            </div>
+
+            <div class="cartLeft-row">
+              <div class="cartLeft-col">
+                <input placeholder="Địa chỉ (Ví dụ: 679A Âu Cơ)" type="text" />
+                <span style="display: none"></span>
+              </div>
+            </div>
+
+            <div class="cartLeft-row">
+              <div class="cartLeft-col cartLeft-col--third">
+                <select name="" id="">
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                </select>
+                <img src="./images/icon-down.svg" alt="this-is-icon" />
+              </div>
+              <div class="cartLeft-col cartLeft-col--third">
+                <select name="" id="">
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                </select>
+                <img src="./images/icon-down.svg" alt="this-is-icon" />
+              </div>
+              <div class="cartLeft-col cartLeft-col--third">
+                <select name="" id="">
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                  <option value="">Chọn Tỉnh/Thành</option>
+                </select>
+                <img src="./images/icon-down.svg" alt="this-is-icon" />
+              </div>
+            </div>
+
+            <div class="cartLeft-row">
+              <div class="cartLeft-col">
+                <input
+                  placeholder="Ghi chú thêm (Ví dụ: Giao giờ hành chính)"
+                  type="text"
+                />
+                <span style="display: none"></span>
+              </div>
+            </div>
+          </form>
+
+          <div class="cartLeft-pay">
+            <h1 class="heading">Hình thức thanh toán</h1>
+
+            <div class="cartLeft-wrapper">
+              <label class="cartLeft-item" for="1">
+                <div class="cartLeft-item__group">
+                  <input checked type="radio" name="radio" id="1" />
+                  <img src="./images/icon-car.svg" alt="this-is-icon" />
+                </div>
+                <span
+                  >COD<br />
+                  Thanh toán khi nhận hàng</span
+                >
+              </label>
+              <label class="cartLeft-item" for="2">
+                <div class="cartLeft-item__group">
+                  <input type="radio" name="radio" id="2" />
+                  <img src="./images/icon-card.svg" alt="this-is-icon" />
+                </div>
+                <span>
+                  Thẻ ATM / Internet Banking<br />Thẻ tín dụng (Credit card) /
+                  Thẻ ghi nợ (Debit card)<br />VNPay QR
+                </span>
+              </label>
+              <label class="cartLeft-item" for="3">
+                <div class="cartLeft-item__group">
+                  <input type="radio" name="radio" id="3" />
+                  <img src="./images/icon-pay.svg" alt="this-is-icon" />
+                </div>
+                <span>Chuyển khoản</span>
+              </label>
+            </div>
+
+            <button type="submit" class="cartLeft-btn">
+              Thanh toán 599.000 đ (COD)
+            </button>
+          </div>
+        </div>
+        <div class="cartRight">
+          <h1 class="heading">Giỏ hàng</h1>
+          <div class="cartRight-item">
+            <div class="cartRight-item__image">
+              <img src="./images/cart-image1.png" alt="this-is-image" />
+              <span class="cartRight-item__count">1</span>
+            </div>
+
+            <div class="cartRight-content">
+              <div class="cartRight-top">
+                <h2>
+                  <a href="#!">
+                    Nước Tẩy Trang Làm Sạch Sâu 3 In 1 L'Oreal Micellar Water
+                    Deep Cleansing | 400ML
+                  </a>
+                </h2>
+                <img src="./images/close2.svg" alt="this-is-icon" />
+              </div>
+              <div class="cartRight-bot">
+                <div class="cartRight-bot__quantity">
+                  <div class="btn-minus">
+                    <img src="./images/minus.svg" alt="this-is-icon" />
+                  </div>
+                  <input
+                    class="quantity"
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <div class="btn-plus">
+                    <img src="./images/plus.svg" alt="this-is-icon" />
+                  </div>
+                </div>
+                <div class="cartRight-bot__price">
+                  <span>339.000 đ</span>
+                  <span>400.000 đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartRight-item">
+            <div class="cartRight-item__image">
+              <img src="./images/cart-image2.png" alt="this-is-image" />
+              <span class="cartRight-item__count">2</span>
+            </div>
+
+            <div class="cartRight-content">
+              <div class="cartRight-top">
+                <h2>
+                  <a href="#!">
+                    Dầu Gội Tsubaki Premium Repair Shampoo | 490ML
+                  </a>
+                </h2>
+                <img src="./images/close2.svg" alt="this-is-icon" />
+              </div>
+              <div class="cartRight-bot">
+                <div class="cartRight-bot__quantity">
+                  <div class="btn-minus">
+                    <img src="./images/minus.svg" alt="this-is-icon" />
+                  </div>
+                  <input
+                    class="quantity"
+                    type="number"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <div class="btn-plus">
+                    <img src="./images/plus.svg" alt="this-is-icon" />
+                  </div>
+                </div>
+                <div class="cartRight-bot__price">
+                  <span>339.000 đ</span>
+                  <span>400.000 đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartRight-item">
+            <div class="cartRight-item__image">
+              <img src="./images/cart-image3.png" alt="this-is-image" />
+              <span class="cartRight-item__count">1</span>
+            </div>
+
+            <div class="cartRight-content">
+              <div class="cartRight-top">
+                <h2>
+                  <a href="#!">
+                    Mặt Nạ Miếng Dưỡng Ẩm, Dưỡng Trắng, Giảm Mụn, Phục Hồi Da
+                  </a>
+                </h2>
+                <img src="./images/close2.svg" alt="this-is-icon" />
+              </div>
+              <div class="cartRight-bot">
+                <div class="cartRight-bot__quantity">
+                  <div class="btn-minus">
+                    <img src="./images/minus.svg" alt="this-is-icon" />
+                  </div>
+                  <input
+                    class="quantity"
+                    type="number"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <div class="btn-plus">
+                    <img src="./images/plus.svg" alt="this-is-icon" />
+                  </div>
+                </div>
+                <div class="cartRight-bot__price">
+                  <span>339.000 đ</span>
+                  <span>400.000 đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartRight-code">
+            <input
+              class="cartRight-code__sale"
+              placeholder="Mã giảm giá"
+              type="text"
+            />
+            <span class="cartRight-code__apply">Áp dụng</span>
+          </div>
+
+          <div class="cartRight-gap">
+            <div class="cartRight-group">
+              <span>Tạm tính</span>
+              <div class="cartRight-group__main">
+                <span>839.000 đ</span>
+                <span class="cartRight-group__main-italic"
+                  >(tiết kiệm 88k)</span
+                >
+              </div>
+            </div>
+            <div class="cartRight-group">
+              <span>Giảm giá</span>
+              <div class="cartRight-group__main">
+                <span>0đ</span>
+              </div>
+            </div>
+            <div class="cartRight-group">
+              <span>Phí giao hàng</span>
+              <div class="cartRight-group__main">
+                <span>Miễn phí</span>
+              </div>
+            </div>
+          </div>
+          <div class="cartRight-group">
+            <span>Tổng</span>
+            <div class="cartRight-group__total">
+              <span>839.000 đ</span>
+              <p>(Đã giảm 26% trên giá gốc)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="./js/pageCart.js"></script>
+  </body>
+</html>

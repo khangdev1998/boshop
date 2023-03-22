@@ -17,7 +17,6 @@ $(document).ready(function () {
     },
   });
 
-
   // Show cart
   $("#cart").hide();
   $("#showCart").click(function (e) {
@@ -45,26 +44,26 @@ $(document).ready(function () {
       if (callNow) func.apply(context, args);
     };
   }
-  const headerTop = $("#header").offset().top;
+  const header = $("#header");
+  const headerTop = header && header.offset().top;
   $(window).scroll(
     debounceFn(function () {
       const windowScroll = $(window).scrollTop();
       if (windowScroll > headerTop) {
-        $("#header").addClass("fixed");
+       header.addClass("fixed");
         $(".header__container").css("align-items", "center");
         $(".header-search__list").hide("fixed");
-        $('#menuCategory').css('top', 'calc(100% - 10px)');
-
+        $("#menuCategory").css("top", "calc(100% - 10px)");
       } else {
-        $("#header").removeClass("fixed");
+       header.removeClass("fixed");
         $(".header-search__list").show("fixed");
         $(".header__container").removeAttr("style");
-        $('#menuCategory').css('top', 'calc(100% - 20px)');
+        $("#menuCategory").css("top", "calc(100% - 28px)");
       }
     }, 50)
   );
 
-  // Icon Bars and Close 
+  // Icon Bars and Close
   $("#icon-close").hide();
   $("#menuCategory").hide();
   buttonShow = 1;
@@ -81,23 +80,21 @@ $(document).ready(function () {
       buttonShow = 1;
     }
   });
-});
 
-$(".menuCategory-content").hide();
-$(".menuCategory-list__link").click(function (e) {
-  e.preventDefault();
-  index = $(".menuCategory-list__link").index(this);
-  $(".menuCategory-list__link").removeClass("active");
-  $(this).addClass("active");
-
-  $(".menuCategory-list__link img:last-child").removeClass("show");
-  $(this).children("img:last-child").addClass("show");
-
+  // Menu Category Content
   $(".menuCategory-content").hide();
+  $(".menuCategory-list__link").click(function (e) {
+    e.preventDefault();
+    index = $(".menuCategory-list__link").index(this);
+    $(".menuCategory-list__link").removeClass("active");
+    $(this).addClass("active");
 
-  $(".menuCategory-content").eq(index).show();
+    $(".menuCategory-list__link img:last-child").removeClass("show");
+    $(this).children("img:last-child").addClass("show");
+    $(".menuCategory-content").hide();
+    $(".menuCategory-content").eq(index).show();
+  });
+  $(".menuCategory-content ul li a").click(function (e) {
+    e.preventDefault();
+  });
 });
-$(".menuCategory-content ul li a").click(function (e) {
-  e.preventDefault();
-});
-
