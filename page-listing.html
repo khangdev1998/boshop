@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/page-listing.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <title>Boshop</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h4 class="sidebar-caption">Danh mục</h4>
+      <h1 class="sidebar-heading">CHĂM SÓC TÓC & <br />DA ĐẦU</h1>
+
+      <!-- Content 1 -->
+      <div class="dropdown" id="dropdown-button-1">
+        <h2>DANH MỤC SẢN PHẨM</h2>
+        <img src="./images/icon-up.svg" alt="this-is-icon" />
+      </div>
+      <div class="dropdown-content" id="dropdown-content-1">
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume1" id="perfume1" />
+          <label for="perfume1">Dầu gội - Dầu xả</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume2" id="perfume2" />
+          <label for="perfume2">Kem ủ</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume3" id="perfume3" />
+          <label for="perfume3">Dầu dưỡng tóc</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume4" id="perfume4" />
+          <label for="perfume4">Chăm sóc da mặt</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume5" id="perfume5" />
+          <label for="perfume5">Trang điểm</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume6" id="perfume6" />
+          <label for="perfume6">Chăm sóc cơ thể</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume7" id="perfume7" />
+          <label for="perfume7">Nước hoa</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="perfume8" id="perfume8" />
+          <label for="perfume8">Thực phẩm chức năng</label>
+        </div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="dropdown" id="dropdown-button-2">
+        <h2>GIÁ</h2>
+        <img src="./images/icon-up.svg" alt="this-is-icon" />
+      </div>
+      <div class="dropdown-content" id="dropdown-content-2">
+        <div class="dropdown-content__price">
+          <input id="pricez-1" type="number" />
+          <span></span>
+          <input id="pricez-2" type="number" />
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="price1" id="price1" />
+          <label for="price1">0 đ - 100.000 đ</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="price2" id="price2" />
+          <label for="price2">100.000 đ - 200.000 đ</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="price3" id="price3" />
+          <label for="price3">200.000 đ - 300.000 đ</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="price4" id="price4" />
+          <label for="price4">300.000 đ - 400.000 đ</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="price5" id="price5" />
+          <label for="price5">400.000 đ - 500.000 đ</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="price6" id="price6" />
+          <label for="price6">Trên 500.000 đ</label>
+        </div>
+      </div>
+
+      <!-- Content 3 -->
+      <div class="dropdown" id="dropdown-button-3">
+        <h2>THƯƠNG HIỆU</h2>
+        <img src="./images/icon-up.svg" alt="this-is-icon" />
+      </div>
+      <div class="dropdown-content" id="dropdown-content-3">
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark1" id="mark1" />
+          <label for="mark1">Vacosi (2)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark2" id="mark2" />
+          <label for="mark2">Bird House (5)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark3" id="mark3" />
+          <label for="mark3">LAMEILA (3)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark4" id="mark4" />
+          <label for="mark4">BNBG (2)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark5" id="mark5" />
+          <label for="mark5">LIFETRONS (5)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark6" id="mark6" />
+          <label for="mark6">Foreo (3)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark7" id="mark7" />
+          <label for="mark7">Bibury (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark8" id="mark8" />
+          <label for="mark8">Liplce (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark9" id="mark9" />
+          <label for="mark9">Mentholatum (5)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark10" id="mark10" />
+          <label for="mark10">Miracle Apo (3)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark11" id="mark11" />
+          <label for="mark11">I'M MEME (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark12" id="mark12" />
+          <label for="mark12">SECRET KEY (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark13" id="mark13" />
+          <label for="mark13">Kem ủ</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="mark14" id="mark14" />
+          <label for="mark14">Bibury (7)</label>
+        </div>
+      </div>
+
+      <!-- Content 4 -->
+      <div class="dropdown" id="dropdown-button-4">
+        <h2>CÔNG DỤNG</h2>
+        <img src="./images/icon-up.svg" alt="this-is-icon" />
+      </div>
+      <div class="dropdown-content" id="dropdown-content-4">
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="lt1" id="lt1" />
+          <label for="lt1">Dưỡng ẩm (2)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="lt2" id="lt2" />
+          <label for="lt2">Làm sáng da (5)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="lt3" id="lt3" />
+          <label for="lt3">Chống nắng (3)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="lt4" id="lt4" />
+          <label for="lt4">Làm sạch da (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="lt5" id="lt5" />
+          <label for="lt5">Ngừa, giảm mụn (7)</label>
+        </div>
+      </div>
+
+      <!-- Content 5 -->
+      <div class="dropdown" id="dropdown-button-5">
+        <h2>LOẠI DA</h2>
+        <img src="./images/icon-up.svg" alt="this-is-icon" />
+      </div>
+      <div class="dropdown-content" id="dropdown-content-5">
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="az1" id="az1" />
+          <label for="az1">Mọi loại da (2)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="az2" id="az2" />
+          <label for="az2">Da dầu (5)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="az3" id="az3" />
+          <label for="az3">Da khô (3)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="az4" id="az4" />
+          <label for="az4">Da thường (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="az5" id="az5" />
+          <label for="az5">Da hỗn hợp (7)</label>
+        </div>
+      </div>
+
+      <!-- Content 6 -->
+      <div class="dropdown" id="dropdown-button-6">
+        <h2>KẾT CẤU</h2>
+        <img src="./images/icon-up.svg" alt="this-is-icon" />
+      </div>
+      <div class="dropdown-content" id="dropdown-content-6">
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="vz1" id="vz1" />
+          <label for="vz1">Dạng lỏng (2)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="vz2" id="vz2" />
+          <label for="vz2">Dạng kem (5)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="vz3" id="vz3" />
+          <label for="vz3">Dạng gel (3)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="vz4" id="vz4" />
+          <label for="vz4">Dạng miếng (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="vz5" id="vz5" />
+          <label for="vz5">Dạng giấy (7)</label>
+        </div>
+        <div class="dropdown-content__item">
+          <input type="checkbox" name="vz6" id="vz6" />
+          <label for="vz6">Dạng dầu (2)</label>
+        </div>
+      </div>
+
+      <a href="#!" class="sidebar__button"> Áp dụng </a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="./js/page-listing.js"></script>
+  </body>
+</html>
