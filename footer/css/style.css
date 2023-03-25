@@ -83,6 +83,7 @@ body {
   position: relative;
   height: 43px;
   margin-bottom: 17px;
+  border-radius: 10px;
 }
 .footer .footer-form::after {
   content: "";
